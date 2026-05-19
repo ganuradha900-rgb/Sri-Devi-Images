@@ -1,0 +1,159 @@
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .hero { background: #1a1a1a; color: white; padding: 60px 32px; text-align: center; border-radius: var(--border-radius-lg); margin-bottom: 24px; position: relative; }
+  .hero-logo { font-size: 13px; letter-spacing: 4px; color: #d4af37; margin-bottom: 12px; text-transform: uppercase; }
+  .hero h1 { font-size: 36px; font-weight: 500; color: white; margin-bottom: 8px; }
+  .hero p { font-size: 15px; color: rgba(255,255,255,0.6); margin-bottom: 28px; }
+  .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold { background: #d4af37; color: #1a1a1a; border: none; padding: 10px 24px; border-radius: var(--border-radius-md); font-size: 14px; font-weight: 500; cursor: pointer; }
+  .btn-outline { background: transparent; color: white; border: 0.5px solid rgba(255,255,255,0.4); padding: 10px 24px; border-radius: var(--border-radius-md); font-size: 14px; cursor: pointer; }
+  .section { margin-bottom: 24px; }
+  .section-title { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+  .section-sub { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 16px; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .service-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 16px; text-align: center; }
+  .service-icon { font-size: 24px; color: #d4af37; margin-bottom: 8px; }
+  .service-name { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+  .service-desc { font-size: 12px; color: var(--color-text-secondary); }
+  .contact-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 20px; }
+  .contact-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .contact-row:last-child { border-bottom: none; }
+  .contact-icon { font-size: 18px; color: #d4af37; width: 28px; flex-shrink: 0; }
+  .contact-label { font-size: 12px; color: var(--color-text-secondary); }
+  .contact-value { font-size: 14px; font-weight: 500; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .gallery-item { background: var(--color-background-secondary); border-radius: var(--border-radius-md); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+  .footer { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 20px; text-align: center; }
+  .footer-logo { font-size: 18px; font-weight: 500; color: #d4af37; margin-bottom: 4px; }
+  .footer-tagline { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 12px; }
+  .footer-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .footer-link { font-size: 13px; color: var(--color-text-secondary); cursor: pointer; }
+  .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); margin-bottom: 16px; }
+  .nav-logo { font-size: 15px; font-weight: 500; color: #d4af37; }
+  .nav-links { display: flex; gap: 16px; }
+  .nav-link { font-size: 13px; color: var(--color-text-secondary); cursor: pointer; }
+  .book-btn { background: #d4af37; color: #1a1a1a; border: none; padding: 7px 16px; border-radius: var(--border-radius-md); font-size: 13px; font-weight: 500; cursor: pointer; }
+</style>
+
+<h2 class="sr-only">Sri Devi Images — website mockup without pricing section</h2>
+
+<div style="padding: 1rem 0;">
+
+  <div class="nav">
+    <span class="nav-logo"><i class="ti ti-camera" aria-hidden="true"></i> Sri Devi Images</span>
+    <div class="nav-links">
+      <span class="nav-link">Home</span>
+      <span class="nav-link">Services</span>
+      <span class="nav-link">Gallery</span>
+      <span class="nav-link">Contact</span>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+
+  <div class="hero">
+    <div class="hero-logo"><i class="ti ti-camera" aria-hidden="true"></i> &nbsp; Sri Devi Images</div>
+    <h1>Capturing Moments,<br>Creating Memories</h1>
+    <p>Professional Photography & Cinematography Studio</p>
+    <div class="hero-btns">
+      <button class="btn-gold">View Portfolio</button>
+      <button class="btn-outline">Book a Session</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Our Services</div>
+    <div class="section-sub">Professional photography for every occasion</div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-heart" aria-hidden="true"></i></div>
+        <div class="service-name">Wedding</div>
+        <div class="service-desc">Full day coverage</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
+        <div class="service-name">Portrait & Family</div>
+        <div class="service-desc">Studio & outdoor</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-baby-carriage" aria-hidden="true"></i></div>
+        <div class="service-name">Baby & Maternity</div>
+        <div class="service-desc">Precious moments</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-confetti" aria-hidden="true"></i></div>
+        <div class="service-name">Events</div>
+        <div class="service-desc">Birthdays & parties</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-id-badge" aria-hidden="true"></i></div>
+        <div class="service-name">Passport Photos</div>
+        <div class="service-desc">Quick & professional</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-video" aria-hidden="true"></i></div>
+        <div class="service-name">Cinematography</div>
+        <div class="service-desc">HD video coverage</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Gallery Preview</div>
+    <div class="section-sub">A glimpse of our work</div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><i class="ti ti-camera" aria-hidden="true"></i></div>
+      <div class="gallery-item"><i class="ti ti-heart" aria-hidden="true"></i></div>
+      <div class="gallery-item"><i class="ti ti-users" aria-hidden="true"></i></div>
+      <div class="gallery-item"><i class="ti ti-confetti" aria-hidden="true"></i></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Contact Us</div>
+    <div class="section-sub">We'd love to hear from you</div>
+    <div class="contact-card">
+      <div class="contact-row">
+        <div class="contact-icon"><i class="ti ti-user" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">Owner</div>
+          <div class="contact-value">G. Prasad</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon"><i class="ti ti-phone" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">9000505351 / 9440119655</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">deviimages.nad@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Sri Devi Images Studio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-logo">Sri Devi Images</div>
+    <div class="footer-tagline">Capturing Moments, Creating Memories</div>
+    <div class="footer-links">
+      <span class="footer-link">Home</span>
+      <span class="footer-link">Services</span>
+      <span class="footer-link">Gallery</span>
+      <span class="footer-link">Contact</span>
+    </div>
+    <p style="font-size: 11px; color: var(--color-text-secondary); margin-top: 12px;">© 2026 Sri Devi Images. All rights reserved.</p>
+  </div>
+
+</div>
